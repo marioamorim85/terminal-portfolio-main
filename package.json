@@ -1,8 +1,8 @@
 {
-  "name": "iamdhakre-dev-react",
-  "homepage": "https://iamdhakrey.github.io/iamdhakre-dev-react",
+  "name": "mario-terminal-portfolio",
+  "homepage": "https://terminal.marioamorim.com",
   "private": true,
-  "version": "1.6.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,6 +37,9 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-common-types": "^6.5.1",
+    "@rollup/rollup-win32-x64-msvc": "^4.50.0",
+    "@swc/core-win32-x64-msvc": "^1.13.5",
+    "@types/history": "^4.7.11",
     "@types/node": "^24.0.10",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",

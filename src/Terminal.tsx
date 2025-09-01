@@ -194,31 +194,42 @@ const Terminal = () => {
                     text: [
                         "",
                         "╔═══════════════════════════════════════════════════════════════════════════════════════╗",
-                        `║                          🎯 ${terminalConfig.hostname.toUpperCase()} TERMINAL v2.1                              ║`,
+                        `║                          🎯 ${terminalConfig.hostname.toUpperCase()} TERMINAL v2.1                    ║`,
                         "╚═══════════════════════════════════════════════════════════════════════════════════════╝",
                         "",
                         "╭─ 🔍 SYSTEM & INFORMATION ──────────────────┬─ 🧭 NAVIGATION & FILES ──────────────────╮",
-                        "│                                            │                                          │",
+                        "│                                             │                                          │",
                         "│  🖥️  neofetch     System overview w/ ASCII │  📁 cd [dir]      Change directory       │",
                         "│  👤 whoami       Current user details      │  📋 ls [opts]     List directory         │",
                         "│  ℹ️  about        Developer biography      │  📍 pwd           Current path           │",
                         "│  🎯 profile      Shareable profile link    │  🌳 tree          Directory tree view    │",
                         "│  🔧 uname        System architecture       │  🔍 grep [term]   Search in files        │",
-                        "│  ⏰ uptime       System uptime stats       │                                          │",
+                        "│  ⏰ uptime       System uptime stats       │  📂 search [term] Find commands          │",
                         "│                                            │  💡 Tip: Try 'cd projects' or 'cd blogs' │",
+                        "└────────────────────────────────────────────┴_──────────────────────────────────────────┘",
+                        "",
+                        "╭─ 👨‍💻 MÁRIO'S PROFESSIONAL PROFILE ────────┬─ 🛠️  UTILITIES & PRODUCTIVITY ────────────╮",
+                        "│                                            │                                          │",
+                        "│  🎓 teaching      Courses at ISTEC Porto  │  🧮 calc [expr]   Smart calculator        │",
+                        "│  🔬 research      Publications & papers   │  🌤️  weather      Current weather info    │",
+                        "│  🏆 awards        Academic achievements   │  🚀 skills        Technical skill tree    │",
+                        "│  📚 stacks        Technology overview     │  📊 analytics     Site visitor stats      │",
+                        "│  📧 contact       Get in touch with me    │  📜 history       Command history view    │",
+                        "│  📄 cv            Download my resume      │  📅 date          Current date & time     │",
+                        "│  💼 projects      Featured GitHub repos   │  ⌨️  shortcuts    Keyboard hotkeys        │",
+                        "│  📝 blog          Technical articles      │  🎨 theme         Terminal themes         │",
                         "└────────────────────────────────────────────┴──────────────────────────────────────────┘",
                         "",
-                        "╭─ 🎭 ENTERTAINMENT & FUN ──────────────────┬─ 🛠️  UTILITIES & PRODUCTIVITY ────────────╮",
-                        "│                                           │                                           │",
-                        "│  🦜 parrot       Animated dancing parrot  │  🧮 calc [expr]   Smart calculator        │",
-                        "│  🔮 fortune      Random wisdom quotes     │  🌤️  weather      Current weather info    │",
-                        "│  🐄 cowsay [msg] Talking cow messenger    │  🚀 skills        Technical skill tree    │",
-                        "│  🚂 sl           Steam locomotive fun     │  📊 analytics     Site visitor stats      │",
-                        "│  🟩 matrix       Enter the Matrix mode    │  📜 history       Command history view    │",
-                        "│  😂 joke         Programming humor        │  📅 date          Current date & time     │",
-                        "│                                           │  ⌨️  shortcuts    Keyboard hotkeys        │",
-                        "│  🎲 Try these for instant entertainment!  │  🎨 theme         Terminal themes         │",
-                        "└───────────────────────────────────────────┴───────────────────────────────────────────┘",
+                        "╭─ 🎭 ENTERTAINMENT & FUN ──────────────────┬─ 🔧 SYSTEM COMMANDS ─────────────────────╮",
+                        "│                                           │                                          │",
+                        "│  🦜 parrot       Animated dancing parrot  │  🧹 clear        Clear terminal screen   │",
+                        "│  🔮 fortune      Random wisdom quotes     │  🚪 exit         Exit terminal           │",
+                        "│  🐄 cowsay [msg] Talking cow messenger    │  🔄 reload       Reload configuration    │",
+                        "│  🚂 sl           Steam locomotive fun     │  📊 ps           Process information     │",
+                        "│  🟩 matrix       Enter the Matrix mode    │  📈 top          System monitor          │",
+                        "│  😂 joke         Programming humor        │  📖 man [cmd]    Command manual          │",
+                        "│  🎲 Try these for instant entertainment!  │  🎯 which [cmd]  Locate command          │",
+                        "└───────────────────────────────────────────┴──────────────────────────────────────────┘",
                         "",
                         "╭─ ⚡ POWER USER ZONE ──────────────────────────────────────────────────────────────────╮",
                         "│                                                                                       │",
@@ -259,6 +270,7 @@ const Terminal = () => {
                         "",
                         "🌟 Pro Tip: Type any command name followed by '--help' for detailed usage instructions!",
                         `💫 Having fun? Share this terminal with friends: https://${terminalConfig.hostname}`,
+                        "🎓 Made with ❤️ by Mário Amorim | JoTecA 2025 Winner | ISTEC Porto Lecturer",
                         ""
                     ]
                 });
@@ -414,7 +426,7 @@ const Terminal = () => {
 
             case "clear":
                 setOutput([]);
-                break;
+                return;
 
             case "ls":
                 if (params.includes("blogs") || params.includes("/blogs")) {
@@ -1345,7 +1357,7 @@ const Terminal = () => {
         >
             {/* Input line */}
             <div className="flex items-center pt-2 text-sm sm:text-base" style={{ color: 'var(--theme-commandText)' }}>
-                <span className="hidden sm:inline" style={{ color: 'var(--theme-promptUser)' }}>user@{terminalConfig.hostname}</span>
+                <span className="hidden sm:inline" style={{ color: 'var(--theme-promptUser)' }}>{terminalConfig.username}@{terminalConfig.hostname}</span>
                 <span className="hidden sm:inline" style={{ color: 'var(--theme-text)' }}>:</span>
                 <span className="hidden sm:inline" style={{ color: 'var(--theme-promptPath)' }}>~</span>
                 <span style={{ color: 'var(--theme-promptSymbol)' }}>$ </span>
@@ -1457,7 +1469,7 @@ const Terminal = () => {
                             <div className="text-2xl sm:text-3xl mb-2">
                                 ╭────────────────────────────╮
                             </div>
-                            <div className="text-l sm:text-xl font-bold mb-1" style={{ color: 'var(--theme-primary)' }}>
+                            <div className="text-sm sm:text-base font-bold mb-1" style={{ color: 'var(--theme-primary)' }}>
                                 🚀 Welcome to {terminalConfig.hostname} Terminal
                             </div>
                             <div className="text-2xl sm:text-3xl mb-3">

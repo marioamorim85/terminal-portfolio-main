@@ -1,22 +1,43 @@
-# Github Profile Portfolio
+# Mário Amorim - Terminal Portfolio
 
-[![Production Ready](https://img.shields.io/badge/Production-Ready-green.svg)](https://github.com/yourusername/github-profile) [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Production Ready](https://img.shields.io/badge/Production-Ready-green.svg)](https://github.com/marioamorim85/mario-terminal-portfolio) [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern, terminal-style portfolio website that's fully configurable through a single configuration file. Perfect for developers who want to showcase their skills and projects in a unique way.
+A modern, terminal-style portfolio website showcasing the work of **Mário Filipe Encarnação Amorim** - Computer Engineer and University Lecturer at ISTEC Porto. Features custom commands for academic and professional content, GitHub integration, and a comprehensive blog system.
 
 [![Demo](docs/demo.gif)](docs/demo.gif)
 
 ## ✨ Features
 
-- **🖥️ Interactive Terminal Interface** - Navigate through your portfolio using terminal commands
+- **🖥️ Interactive Terminal Interface** - Navigate through Mário's portfolio using terminal commands
+- **👨‍🏫 Academic Focus** - Custom commands for teaching, research, and academic achievements
 - **📱 Fully Responsive** - Works perfectly on desktop, tablet, and mobile
-- **⚙️ Easy Configuration** - Everything configurable through `profile.config.ts`
-- **🔄 GitHub Integration** - Displays your GitHub stats and projects from static data
-- **🎨 Customizable Themes** - Dark, light, matrix, and cyberpunk themes
-- **📝 Blog Support** - Built-in blog functionality with markdown support
-- **🔍 SEO Optimized** - Perfect for social media sharing
+- **⚙️ Personalized Configuration** - Fully configured with Mário's professional information
+- **🔄 GitHub Integration** - Displays GitHub stats and projects from marioamorim85
+- **🎨 Multiple Themes** - Dark, light, matrix, and cyberpunk themes
+- **📝 Technical Blog** - Features articles on n8n, security, automation, and teaching
+- **🏆 Awards Showcase** - Highlights JoTecA 2025 winner and academic achievements  
+- **🔍 SEO Optimized** - Perfect for social media sharing with Portuguese market focus
 - **🚀 Fast & Modern** - Built with React, TypeScript, and Vite
 - **💾 Smart Caching** - GitHub data served from static files for optimal performance
+
+## 🎯 Custom Commands Available
+
+**Academic & Professional:**
+- `about` - Learn about Mário's background and achievements
+- `teaching` - View courses taught at ISTEC Porto  
+- `research` - Browse publications and research work
+- `awards` - Academic distinctions and recognitions
+
+**Technical:**
+- `skills` - Technical skills grouped by category (Frontend, Backend, DevOps, Security)
+- `projects` - Featured projects including award-winning Tecas assistant
+- `stacks` - Quick overview of technology stacks
+- `blog` - Read technical articles on n8n, security, and automation
+
+**Personal:**
+- `contact` - Professional contact information
+- `cv` - Download CV/Resume
+- `neofetch` - System information display
 
 ## 🚀 Quick Start
 
@@ -30,8 +51,8 @@ A modern, terminal-style portfolio website that's fully configurable through a s
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/iamdhakrey/terminal-portfolio.git
-   cd github-profile
+   git clone https://github.com/marioamorim85/mario-terminal-portfolio.git
+   cd mario-terminal-portfolio
    ```
 
 2. **Install dependencies**
@@ -481,8 +502,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or need help:
 
 1. Check the documentation above
-2. Search existing [Issues](https://github.com/iamdhakrey/github-profile/issues)
+2. Search existing [Issues](https://github.com/marioamorim85/mario-terminal-portfolio/issues)
 3. Create a new issue if needed
+4. Contact Mário directly: mario@marioamorim.com
 
 ## 🙏 Acknowledgments
 
@@ -494,6 +516,10 @@ If you have any questions or need help:
 
 ⭐ **Star this repository if you found it helpful!**
 
-🐛 **Found a bug?** [Open an issue](https://github.com/iamdhakrey/github-profile/issues)
+🐛 **Found a bug?** [Open an issue](https://github.com/marioamorim85/mario-terminal-portfolio/issues)
 
-💡 **Have a feature request?** [Start a discussion](https://github.com/iamdhakrey/github-profile/discussions)
+💡 **Have a feature request?** [Start a discussion](https://github.com/marioamorim85/mario-terminal-portfolio/discussions)
+
+🎓 **About Mário:** Computer Engineer and University Lecturer passionate about technology, education, and automation.
+
+📧 **Contact:** mario@marioamorim.com | 🔗 [LinkedIn](https://linkedin.com/in/marioamorim)

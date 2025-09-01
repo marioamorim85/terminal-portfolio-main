@@ -155,41 +155,38 @@ export interface ProfileConfig {
 // Default configuration - Users can override any of these values
 export const profileConfig: ProfileConfig = {
   profile: {
-    name: "Hrithik Dhakrey",
-    username: "iamdhakrey",
-    title: "Full Stack Developer & Open Source Enthusiast",
-    description: "Passionate developer creating awesome solutions with Rust, TypeScript, and Go",
-    bio: "I'm a passionate developer who loves creating innovative solutions and learning new technologies. Always excited to work on interesting projects and collaborate with fellow developers!",
-    image: "/H.svg",
-    website: "https://iamdhakrey.dev",
-    location: "Delhi, India",
-    email: "your.email@example.com",
+    name: "Mário Filipe Encarnação Amorim",
+    username: "mario",
+    title: "Computer Engineer & University Lecturer",
+    description: "Computer Engineering graduate teaching at ISTEC Porto. Full-stack development, cloud computing, and security specialist.",
+    bio: "Computer Engineering graduate (ISLA Gaia, GPA 18/20), currently a University Lecturer at ISTEC Porto. Strong background in full-stack development, cloud computing, workflow automation, and security. Led innovative projects such as the award-winning intelligent assistant 'Tecas' for JoTecA 2025. Passionate about education, digital transformation, and applying cutting-edge tech to real-world problems.",
+    image: "/M1.ico",
+    website: "https://terminal.marioamorim.com",
+    location: "Portugal",
+    email: "mario@marioamorim.com",
     currentFocus: [
-      "Building modern web applications with Rust and TypeScript",
-      "Developing desktop applications with Tauri",
-      "Creating robust APIs with Go and Echo framework",
-      "Contributing to open source projects"
+      "Teaching Web Development and Cloud Computing at ISTEC Porto",
+      "Developing AI-powered solutions with n8n workflows",
+      "Building full-stack applications with Laravel and React",
+      "Research in intelligent virtual assistants and automation"
     ],
-    funFact: "I maintain multiple projects in Rust, Go, and TypeScript! 🚀"
+    funFact: "Won 1st place at JoTecA 2025 with an intelligent assistant project! 🏆"
   },
 
   socialLinks: {
-    github: "https://github.com/iamdhakrey",
-    website: "https://iamdhakrey.dev",
-    telegram: "https://t.me/iamdhakrey"
+    github: "https://github.com/marioamorim85",
+    linkedin: "https://linkedin.com/in/marioamorim",
+    website: "https://terminal.marioamorim.com",
+    portfolio: "https://portfolio.marioamorim.com"
   },
 
   skills: [
-    "Rust",
-    "TypeScript",
-    "JavaScript", 
-    "Go",
-    "Python",
-    "React",
-    "Tauri",
-    "Node.js",
-    "Docker",
-    "Linux"
+    "React", "Next.js", "TypeScript", "Tailwind", "Framer Motion",
+    "Laravel", "Node.js", "Express", "PHP",
+    "Docker", "Portainer", "EasyPanel", "Azure", "Nginx", "CI/CD",
+    "MySQL", "PostgreSQL", "MariaDB", "Supabase", "MongoDB",
+    "OSINT", "Nessus", "Metasploit", "Kali Linux", "Packet Tracer",
+    "GitHub", "VS Code", "n8n", "Superset"
   ],
 
   stats: {
@@ -201,30 +198,35 @@ export const profileConfig: ProfileConfig = {
 
   achievements: [
     {
-      title: "Rust Developer",
-      description: "Building high-performance applications with Rust",
-      icon: "🦀"
+      title: "🏆 JoTecA 2025 Winner",
+      description: "1st Place – Best Academic Project for 'Architecture of Intelligent Virtual Assistants for Academic Events'",
+      icon: "🏆"
     },
     {
-      title: "Open Source Contributor",
-      description: "Maintaining several public repositories",
-      icon: "🌟"
+      title: "🏆 Scientific Poster Award",
+      description: "1st Prize – Scientific Poster Competition, ISLA Gaia 2024 (ISLA Connect platform)",
+      icon: "🏆"
     },
     {
-      title: "Full-Stack Developer",
-      description: "End-to-end application development",
-      icon: "🚀"
+      title: "🎤 Research Presenter",
+      description: "Presenter at SEI'24 (ISEP) with paper on Big Data & Decision-Making",
+      icon: "🎤"
     },
     {
-      title: "Desktop App Developer",
-      description: "Building cross-platform apps with Tauri",
-      icon: "💻"
+      title: "👨‍🏫 University Lecturer",
+      description: "Teaching Web Development and Cloud Computing at ISTEC Porto",
+      icon: "👨‍🏫"
+    },
+    {
+      title: "🎓 Computer Engineer",
+      description: "ISLA Gaia graduate with GPA 18/20",
+      icon: "🎓"
     }
   ],
 
   terminal: {
-    hostname: "iamdhakrey.dev",
-    username: "iamdhakrey",
+    hostname: "terminal.marioamorim.com",
+    username: "mario",
     theme: "dark",
     welcomeMessage: [
       "",
@@ -267,59 +269,219 @@ export const profileConfig: ProfileConfig = {
       ""
     ],
     customCommands: {
-      "hire-me": {
-        description: "Get my contact information",
+      "about": {
+        description: "Learn about Mário Amorim",
         output: [
-          "📧 Contact Information:",
+          "👨‍💻 About Mário Amorim",
           "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
           "",
-          "Email: your.email@example.com",
-          "LinkedIn: linkedin.com/in/yourusername",
-          "GitHub: github.com/yourusername",
+          "🎓 Computer Engineering graduate (ISLA Gaia, GPA 18/20)",
+          "👨‍🏫 Currently University Lecturer at ISTEC Porto",
+          "🚀 Full-stack developer specializing in Laravel, React, and cloud computing",
+          "🤖 n8n automation enthusiast and workflow architect",
+          "🔒 Security researcher with expertise in OSINT and penetration testing",
+          "",
+          "🏆 Recent Achievement: 1st Place at JoTecA 2025 with intelligent assistant project",
+          "🎤 Research presenter at SEI'24 (ISEP) on Big Data & Decision-Making",
+          "",
+          "Passionate about education, digital transformation, and applying",
+          "cutting-edge technology to solve real-world problems."
+        ]
+      },
+      "skills": {
+        description: "View technical skills grouped by category",
+        output: [
+          "🛠️ Technical Skills",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "🎨 Frontend:",
+          "  React, Next.js, TypeScript, Tailwind CSS, Framer Motion",
+          "",
+          "⚙️ Backend:",
+          "  Laravel, Node.js, Express, PHP",
+          "",
+          "☁️ DevOps/Cloud:",
+          "  Docker, Portainer, EasyPanel, Microsoft Azure, VPS (Hetzner), Nginx, CI/CD",
+          "",
+          "🗄️ Databases:",
+          "  MySQL, PostgreSQL, MariaDB, Supabase, MongoDB",
+          "",
+          "🔒 Security/Pentesting:",
+          "  OSINT, Nessus, Metasploit, Kali Linux, Cisco Packet Tracer",
+          "",
+          "🛠️ Tools:",
+          "  GitHub, VS Code, n8n, Apache Superset"
+        ]
+      },
+      "teaching": {
+        description: "View courses taught at ISTEC Porto",
+        output: [
+          "👨‍🏫 Teaching at ISTEC Porto",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "🌐 Web Client Development",
+          "  HTML, CSS, JavaScript, PHP, MySQL integration",
+          "",
+          "🔧 Web Server Development",
+          "  Laravel framework, Node.js, MongoDB",
+          "",
+          "☁️ Cloud Computing Security",
+          "  Microsoft Azure, security best practices",
+          "",
+          "🌐 Network Administration",
+          "  Cisco Packet Tracer, LAN/WAN configuration"
+        ]
+      },
+      "research": {
+        description: "View publications and research work",
+        output: [
+          "📚 Publications & Research",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "🏆 JoTecA 2025 – Website & Intelligent Assistant",
+          "  ISTEC Porto, 2025 (1st Place Winner)",
+          "",
+          "📊 Big Data and Business Decision-Making",
+          "  SEI'24, ISEP Porto (Presenter)",
+          "",
+          "🎤 ISLA Connect – Event & Check-in Management Platform",
+          "  ISLA Gaia, 2024 (1st Prize Scientific Poster)"
+        ]
+      },
+      "awards": {
+        description: "View academic distinctions and awards",
+        output: [
+          "🏆 Awards & Recognition",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "🥇 JoTecA 2025 – 1st Place",
+          "  Best Academic Project: 'Architecture of Intelligent Virtual",
+          "  Assistants for Academic Events'",
+          "",
+          "🥇 ISLA Gaia 2024 – 1st Prize",
+          "  Scientific Poster Competition (ISLA Connect platform)",
+          "",
+          "🎓 ISLA Gaia – Academic Excellence",
+          "  Computer Engineering degree with GPA 18/20"
+        ]
+      },
+      "projects": {
+        description: "View featured projects (GitHub integration)",
+        output: [
+          "🚀 Key Projects",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "🏆 JoTecA 2025 – Website & AI Assistant",
+          "  Laravel + n8n + PostgreSQL + Docker (⭐ Award winner)",
+          "",
+          "📚 Storytail – Collaborative Story Platform",
+          "  Laravel + MySQL",
+          "",
+          "🔍 Chrome SQL Voyager – MySQL Chrome Extension",
+          "  Node.js backend + Manifest V3",
+          "",
+          "🏁 F1 Rádio PT – Team Radio Archive",
+          "  React + OpenF1 API",
+          "",
+          "💼 Personal Portfolio",
+          "  React + Framer Motion",
+          "",
+          "Use 'projects --github' to view live GitHub repositories"
+        ]
+      },
+      "contact": {
+        description: "Get contact information",
+        output: [
+          "📧 Contact Information",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "📧 Email: mario@marioamorim.com",
+          "🔗 LinkedIn: linkedin.com/in/marioamorim",
+          "🐈‍⬛ GitHub: github.com/marioamorim85",
+          "🌐 Website: marioamorim.com",
+          "💼 Portfolio: portfolio.marioamorim.com",
           "",
           "💼 Available for:",
-          "• Full-time opportunities",
-          "• Freelance projects",
-          "• Open source collaboration",
-          "• Technical consulting",
-          "",
-          "Let's build something amazing together! 🚀"
+          "• Teaching and training opportunities",
+          "• Full-stack development projects",
+          "• Cloud computing consulting",
+          "• n8n workflow automation",
+          "• Academic collaboration"
         ]
       },
-      "coffee": {
-        description: "Buy me a coffee",
+      "cv": {
+        description: "Download CV/Resume",
         output: [
-          "☕ Thanks for considering!",
+          "📄 Curriculum Vitae - Mário Amorim",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
           "",
-          "If you like my work, you can support me:",
-          "• GitHub Sponsors: github.com/sponsors/yourusername",
-          "• Ko-fi: ko-fi.com/yourusername",
-          "• PayPal: paypal.me/yourusername",
+          "💼 Computer Engineer & University Lecturer",
+          "🎓 ISLA Gaia Graduate (GPA: 18/20)",
+          "👨‍🏫 Teaching at ISTEC Porto",
           "",
-          "Every coffee helps me code better! ☕💻"
+          "📊 CV Stats:",
+          "  • Education: Computer Engineering",
+          "  • Experience: University Teaching, Full-Stack Development", 
+          "  • Languages: Portuguese (Native), English (Professional)",
+          "  • Key Skills: Laravel, React, n8n, Cloud Computing, Security",
+          "",
+          "🚀 Opening CV in new tab...",
+          "📱 Mobile-optimized PDF available for download",
+          "",
+          "🔗 Direct link: /assets/mario-amorim-cv.pdf",
+          "💡 Tip: Right-click and 'Save As' to download"
+        ],
+        action: "external",
+        target: "/assets/mario-amorim-cv.pdf"
+      },
+      "stacks": {
+        description: "Quick view of technology stacks",
+        output: [
+          "📚 Technology Stacks",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "• Frontend: React + Next.js + TypeScript + Tailwind",
+          "• Backend: Laravel + Node.js + Express + PHP",
+          "• Cloud: Docker + Azure + Nginx + CI/CD",
+          "• Database: MySQL + PostgreSQL + MongoDB + Supabase",
+          "• Security: OSINT + Metasploit + Kali Linux",
+          "• Automation: n8n + GitHub Actions + Superset"
         ]
       },
-      "joke": {
-        description: "Tell a programming joke",
-        output: () => {
-          const jokes = [
-            "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
-            "How many programmers does it take to change a light bulb? None, that's a hardware problem! 💡",
-            "Why do Java developers wear glasses? Because they can't C#! 👓",
-            "There are only 10 types of people in the world: those who understand binary and those who don't.",
-            "A SQL query goes into a bar, walks up to two tables and asks: 'Can I join you?' 🍺"
-          ];
-          return [jokes[Math.floor(Math.random() * jokes.length)]];
-        }
+      "blog": {
+        description: "Read blog posts and technical articles",
+        output: [
+          "📝 Blog Posts & Articles",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "📚 Featured Articles:",
+          "",
+          "🤖 Tecas — Intelligent Assistant for JoTecA 2025",
+          "   Award-winning intelligent assistant for academic events",
+          "   Tags: n8n, chatbot, academic-events, automation",
+          "",
+          "⚡ Workflow Automations with n8n", 
+          "   Powerful automations connecting multiple platforms",
+          "   Tags: n8n, automation, integration, low-code",
+          "",
+          "🔒 Pentesting Labs & OSINT Experiments",
+          "   Security research and teaching methodologies",
+          "   Tags: pentesting, osint, security, education",
+          "",
+          "💡 Commands:",
+          "  blog open <slug>    - Read full article",
+          "  blog search <term>  - Search articles",
+          "  blog list          - Show all posts"
+        ]
       }
     },
     enabledCommands: [
-      "help", "about", "whoami", "profile", "projects", "neofetch", "clear", 
+      "help", "about", "whoami", "profile", "skills", "projects", "teaching", 
+      "research", "awards", "stacks", "blog", "contact", "cv", "neofetch", "clear", 
       "ls", "cd", "pwd", "fortune", "cowsay", "tree", "ps", "top", "grep", 
-      "cat", "man", "history", "date", "uptime", "uname", "parrot", "sl",
-      "hire-me", "coffee", "joke"
+      "cat", "man", "history", "date", "uptime", "uname", "theme"
     ],
-    prompt: "hrithik@iamdhakrey.dev:~$"
+    prompt: "mario@terminal.marioamorim.com:~$"
   },
 
   systemInfo: {
@@ -350,19 +512,19 @@ export const profileConfig: ProfileConfig = {
 
   blogs: {
     enabled: true,
-    featuredPosts: ["blog-linking-guide", "react-typescript-guide", "linux_commands"],
-    categories: ["React", "TypeScript", "Linux", "DevOps", "Tutorial", "Programming", "Documentation"],
+    featuredPosts: ["assistant-tecas-n8n", "n8n-automations-workflows", "pentesting-labs-osint"],
+    categories: ["AI & Automation", "Automation", "Security", "n8n", "Laravel", "Education", "Cybersecurity"],
     availableBlogs: [
-      "blog-linking-guide.md",
-      "react-typescript-guide.md", 
+      "assistant-tecas-n8n.md",
+      "n8n-automations-workflows.md",
+      "pentesting-labs-osint.md"
     ]
   },
 
   seo: {
-    siteName: "YourName - Developer Portfolio",
-    keywords: ["developer", "portfolio", "react", "typescript", "javascript"],
-    author: "Your Name",
-    twitterHandle: "@yourusername",
+    siteName: "Mário Amorim - Terminal Portfolio",
+    keywords: ["computer engineer", "university lecturer", "full-stack developer", "laravel", "react", "n8n", "cloud computing", "security", "portugal"],
+    author: "Mário Filipe Encarnação Amorim",
     ogImage: "/og-image.jpg"
   },
 
@@ -378,14 +540,13 @@ export const profileConfig: ProfileConfig = {
   },
 
   navigation: {
-    brandName: "iamdhakrey.dev",
+    brandName: "terminal.marioamorim.com",
     brandUrl: "/",
     links: [
       { name: "blogs", path: "/blogs", color: "text-green-400" },
       { name: "projects", path: "/projects", color: "text-orange-400" },
       { name: "profile", path: "/profile", color: "text-purple-400" },
-      { name: "tg", path: "https://t.me/iamdhakrey", external: true, color: "text-blue-400" },
-      { name: "gh", path: "https://github.com/iamdhakrey/", external: true, color: "text-yellow-400" }
+      { name: "gh", path: "https://github.com/marioamorim85/", external: true, color: "text-yellow-400" }
     ],
     systemInfo: {
       // os: "Linux 6.1.0",
