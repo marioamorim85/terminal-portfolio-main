@@ -10,7 +10,8 @@
       "Bash(npx tsc:*)",
       "Bash(npm run update-github:*)",
       "Bash(winget install:*)",
-      "Bash(vercel:*)"
+      "Bash(vercel:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

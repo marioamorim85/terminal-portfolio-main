@@ -53,5 +53,8 @@
     "tailwindcss": "^3.3.6",
     "typescript": "^5.2.2",
     "vite": "^7.0.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.50.0"
   }
 }
